@@ -10,11 +10,11 @@ def guessing_game():
     while True:
         guess = eval(input("Guess the number: "))
         if guess > random_number:
-            print("Too High!")
+            print(f"Your guess of {guess} is too High!")
         elif guess < random_number:
-            print("Too low")
+            print(f"Your guess of {guess} is too low")
         else:
-            print("Just right!")
+            print(f" Your guess of {guess} is just right!")
             break
 # Loop breaks when the input ia just right
 
