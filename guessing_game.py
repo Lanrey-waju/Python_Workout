@@ -8,7 +8,7 @@ def guessing_game():
     random_number = randint(0, 10)
     # Create an indefinite loop
     while True:
-        guess = eval(input("Guess the number: "))
+        guess = int(input("Guess the number: "))
         if guess > random_number:
             print(f"Your guess of {guess} is too High!")
         elif guess < random_number:
