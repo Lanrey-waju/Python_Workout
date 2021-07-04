@@ -12,3 +12,9 @@ def firstLast(iterable):
 
 
 print(firstLast([0, 2, 3, 5]))
+
+#another way to implement the idea is by using slices
+def firstLast2(sequence):
+    return sequence[:1] + sequence[-1:]
+
+print(firstLast2([1, 2, 3, 4, 6]))
