@@ -39,4 +39,15 @@ def find_longest_word():
     print(sorted(data, key=get_max_length)[-1])
 
 
-find_longest_word()
+# find_longest_word()
+
+
+def longest_word():
+    from operator import itemgetter
+
+    with open("dev.txt", "r") as f:
+        data = f.read().split()
+        return sorted(data, key=lambda x: len(x))
+
+
+print(longest_word())
