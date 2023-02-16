@@ -3,7 +3,7 @@ def strsort(seq):
     return "".join(sorted(seq))
 
 
-print(strsort("wyfgilkdpsjw"))
+# print(strsort("wyfgilkdpsjw"))
 
 
 def sort_and_comma(seq):
@@ -17,4 +17,26 @@ def sort_and_comma(seq):
     return ", ".join(sorted_words)
 
 
-print(sort_and_comma("World Hello Dick Harry"))
+# print(sort_and_comma("World Hello Dick Harry"))
+
+
+def find_last_word():
+    with open("dev.txt", "r") as f:
+        data = sorted(f.read().split())
+        print(data[-1])
+
+
+# find_last_word()
+
+
+def get_max_length(word):
+    return len(word)
+
+
+def find_longest_word():
+    with open("dev.txt", "r") as f:
+        data = f.read().split()
+    print(sorted(data, key=get_max_length)[-1])
+
+
+find_longest_word()
